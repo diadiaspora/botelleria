@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tu licorería en Miraflores. Pide licores, vinos, cervezas y bebidas por WhatsApp con delivery en Lima.">
+  <meta name="theme-color" content="#11130f">
+  <title>La Barra — Licores & Delivery en Miraflores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    DELIVERY EN MIRAFLORES Y ALREDEDORES · PEDIDOS POR WHATSAPP
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="La Barra, inicio">
+      <span class="brand-mark">LB</span>
+      <span class="brand-name">LA BARRA<small>LICORES & MARKET</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart-trigger" id="open-cart" aria-label="Abrir carrito">
+      <span class="cart-icon">▱</span><span>Mi carrito</span><b id="cart-count">0</b>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> TU LICORERÍA DE CONFIANZA EN MIRAFLORES</div>
+        <h1>La noche empieza<br>con <em>una buena elección.</em></h1>
+        <p class="hero-copy">Tus licores, vinos, cervezas y bebidas favoritas, directo a tu puerta. Elige, arma tu pedido y coordina tu delivery por WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#catalogo">Explorar productos <span>↗</span></a>
+          <a class="button button-whatsapp" href="https://wa.me/51987654321?text=Hola%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener"> <span class="wa-symbol">◉</span> Pedir por WhatsApp</a>
+        </div>
+        <div class="hero-notes">
+          <span>✓ Pedido fácil por WhatsApp</span>
+          <span>✓ Delivery local</span>
+          <span>✓ Pago coordinado al pedir</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Selección de bebidas">
+        <div class="hero-glow"></div>
+        <div class="hero-stamp">BUENOS<br>MOMENTOS<br><strong>SE SIRVEN<br>AQUÍ.</strong></div>
+        <div class="bottle bottle-one"><span></span></div>
+        <div class="bottle bottle-two"><span></span></div>
+        <div class="bottle bottle-three"><span></span></div>
+        <div class="hero-caption">SELECCIÓN<br><b>PARA COMPARTIR</b></div>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span class="hero-line"></span><span>DESCUBRE TU PRÓXIMO FAVORITO</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>21</strong><span>opciones para elegir</span></div>
+      <div><strong>100%</strong><span>pedido directo</span></div>
+      <div><strong>LOCAL</strong><span>Miraflores, Lima</span></div>
+      <div><strong>18+</strong><span>venta solo a mayores de edad</span></div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow dark-eyebrow"><span></span> NUESTRA SELECCIÓN</div>
+          <h2>Encuentra tu <em>favorito.</em></h2>
+          <p>Clásicos para compartir, brindar y disfrutar. Precios referenciales en soles.</p>
+        </div>
+        <div class="catalog-side-note">DESLIZA, ELIGE<br>Y PIDE A TU MANERA.</div>
+      </div>
+
+      <div class="category-tabs" role="group" aria-label="Filtrar productos">
+        <button class="category-tab active" data-filter="todos">Todo <span>21</span></button>
+        <button class="category-tab" data-filter="pisco">Pisco & destilados</button>
+        <button class="category-tab" data-filter="whisky">Whisky & ron</button>
+        <button class="category-tab" data-filter="vino">Vinos</button>
+        <button class="category-tab" data-filter="cerveza">Cervezas</button>
+        <button class="category-tab" data-filter="bebidas">Bebidas</button>
+      </div>
+
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="delivery-section" id="delivery">
+      <div class="delivery-copy">
+        <div class="eyebrow"><span></span> ASÍ DE FÁCIL</div>
+        <h2>Tu pedido.<br><em>Tu WhatsApp.</em><br>Y listo.</h2>
+        <p>Agrega tus favoritos al carrito. Cuando estés listo, enviaremos tu pedido completo a nuestro WhatsApp para confirmar disponibilidad, dirección y costo de envío.</p>
+        <a class="button button-primary" href="#catalogo">Armar mi pedido <span>↗</span></a>
+      </div>
+      <div class="delivery-steps">
+        <div class="step"><b>01</b><div><strong>Elige tus bebidas</strong><p>Explora el catálogo y agrega productos al carrito.</p></div><span>↗</span></div>
+        <div class="step"><b>02</b><div><strong>Revisa tu pedido</strong><p>Comprueba cantidades y el total referencial.</p></div><span>↗</span></div>
+        <div class="step"><b>03</b><div><strong>Envía por WhatsApp</strong><p>Recibimos tu lista y coordinamos el delivery contigo.</p></div><span>↗</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div>
+        <div class="eyebrow dark-eyebrow"><span></span> ESTAMOS CERCA</div>
+        <h2>¿Brindamos?</h2>
+        <p>Escríbenos y coordinamos tu pedido.</p>
+      </div>
+      <div class="contact-details">
+        <div><small>WHATSAPP / TELÉFONO</small><a href="https://wa.me/51987654321" target="_blank" rel="noopener">+51 987 654 321</a></div>
+        <div><small>DIRECCIÓN</small><strong>Av. Larco 000, Miraflores, Lima, Perú</strong></div>
+        <div><small>HORARIO REFERENCIAL</small><strong>Lun. – Dom. · 12:00 p. m. – 11:00 p. m.</strong></div>
+      </div>
+      <a class="contact-wa" href="https://wa.me/51987654321?text=Hola%2C%20quisiera%20consultar%20por%20un%20pedido." target="_blank" rel="noopener">Hablemos por WhatsApp <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">LB</span><span class="brand-name">LA BARRA<small>LICORES & MARKET</small></span></a>
+    <p>Disfruta responsablemente. Prohibida la venta de bebidas alcohólicas a menores de 18 años.</p>
+    <span>© 2026 LA BARRA · MIRAFLORES, LIMA</span>
+  </footer>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-header"><div><small>TU SELECCIÓN</small><h2>Mi carrito <span id="drawer-count">(0)</span></h2></div><button id="close-cart" class="close-cart" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cart-items"><div class="empty-cart"><span>＋</span><h3>Tu carrito está vacío</h3><p>Agrega tus bebidas favoritas para comenzar.</p></div></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total referencial</span><strong id="cart-total">S/ 0.00</strong></div>
+      <p class="cart-disclaimer">El envío y la disponibilidad se confirman por WhatsApp.</p>
+      <button class="button button-primary checkout-button" id="checkout-button">Enviar pedido por WhatsApp <span>↗</span></button>
+      <button class="continue-shopping" id="continue-shopping">Seguir comprando</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="age-note">Venta exclusiva para mayores de 18 años. Al continuar confirmas que tienes la edad legal para comprar bebidas alcohólicas.</div>
+</body>
+</html>
